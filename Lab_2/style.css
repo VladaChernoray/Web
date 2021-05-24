@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Abel", sans-serif;
+}
+@font-face {
+    font-family: "Abel", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+}
+.bg-dark-black{
+    background-color: black;
+}
+.text-center p{
+    line-height: 0.5;
+    font-size: 16px;
+}
+h3{
+    line-height: 0.8;
+}
+h5{
+    line-height: 1;
+}
+.nav-link{
+    font-size: 20px;
+}
+ul li{
+    color: white;
+    font-size: 24px;
+    line-height: 1;
+}
+ul li:hover{
+    color: gold;
+}
+h2{
+    color: gold;
+}
+h2 a{
+    text-decoration: none;
+    color: gold;
+}
+ul{
+    list-style: none;
+}
+.cnt{
+    box-shadow: 6px 6px 6px 3px black ;
+}
+.bg-dark{
+    background-color: black;
+}
+.card-title h2{
+    color: #eeeeee;
+}
+.card-title h2:hover{
+    color: gold;
+}
+card{
+    background-color: red;
+}
+.slider {
+    min-height: 350px;
+    background-image: url("https://media.architecturaldigest.com/photos/584eeb98dcb583e908275a33/16:9/w_1280,c_limit/beaux-arts-nyc-08.jpg?mbid=social_retweet");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main{
+    margin-bottom: 100px;
+}
+.link{
+    line-height: 0.5;
+}
+/*test_page_collection*/
+.img_c{
+    width: 770px;
+    height: 300px;
+    background-size: cover;
+}
+.img_1{
+    background: url("https://th.bing.com/th/id/R3220ba969095ba9fadfaa2c393dc9531?rik=3w9bzN2w3s1xUg&pid=ImgRaw") center;
+}
+.img_2{
+    background: url("https://media.vanityfair.com/photos/5a4e7bb6518d781e720e1059/16:9/w_1280,c_limit/Metropolitan-Museum-of-Art-Tourist-Rate.jpg") center;
+}
+.img_3{
+    background: url("https://th.bing.com/th/id/Rca2d155a094b96a06af381c9d811851c?rik=Q2s5XNY%2b8Skg0Q&pid=ImgRaw")center;
+}
+.img_4{
+    background: url("https://static01.nyt.com/images/2016/09/28/well/well_guide_metropolitan-slide-I91T/well_guide_metropolitan-slide-I91T-facebookJumbo-v4.jpg") center;
+}
+input .form-control{
+    font-size: 30px;
+}
+svg:hover{
+    fill: red;
+}
+.img_5 {
+    background: url("https://media-cdn.tripadvisor.com/media/photo-s/0c/75/9a/62/kunstwelten.jpg") no-repeat center;
+}
+.txt{
+    font-size: 20px;
+    line-height: 1;
+}
+#contact_box{
+    font-size: 20px;
+    display: none;
+    width: 500px;
+    background-color: black;
+    opacity: 80%;
+    border-radius: 18px;
+    top: 50%;
+    left:50%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+}
+#contact_box:target{
+    display: block;
+}
+.sub_btn{
+    text-decoration: none;
+    font-size: 21px;
+    color: black;
+}
+.sub_btn:hover{
+    color: gold;
+}
+h2 b a{
+    text-decoration: none;
+    color: white;
+}
+h2 b a:hover{
+    color: gold;
+}

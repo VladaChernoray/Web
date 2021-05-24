@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image</title>
+    <script type="text/javascript">
+
+        function changeSize(img){
+            if(img.width === 1000){
+                img.width = 100;
+                img.height = 100;
+            } else {
+                img.width = 500;
+                img.height = 500;
+            }
+        }
+    </script>
+</head>
+<body>
+<img src="image.png" alt="photo" width="100" height="100" onclick="changeSize(this)">
+</body>
+</html>

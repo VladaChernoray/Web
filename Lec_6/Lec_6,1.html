@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        padding: 200px 250px 50px;
+        background-color: pink;
+    }
+    #first{
+        position: relative;
+        animation-name: first;
+    }
+    #second{
+        position: relative;
+        animation-name: second;
+    }
+    #third{
+       position: relative;
+        animation-name: third;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes third {
+        0%   {left:0px; top: 0px; }
+        25%  {left:-20px; top: 30px;}
+        26% {float:left; transform: translate(-240px,-273px)}
+        83%{transform: translate(0px,0px);left:-260px; top: 0px; width: 210vh;}
+        100%{ float:left; top: 10px;}
+    }
+</style>
+<body>
+<div>
+    <div style = "background:#9400D3" align="center" id = "first">First</div>
+    <div style = "background:#EE82EE" align="center" id = "second">Second</div>
+    <div style = "background:#FF00FF" align="center" id = "third">Third</div>
+</div>
+</body>
+</html>

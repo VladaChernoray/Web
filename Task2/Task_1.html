@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    fieldset {
+        font-size:15px;
+        padding:10px;
+        width:400px;
+        height: auto;
+        line-height:0.6;
+        border-color:#DF0101 ;
+        color:#DF0101;
+    }
+    textarea{
+        font-size:14px;
+        width:200px;
+        height:50px ;
+        border-color: #DF0101;
+        color: #DF0101;
+    }
+    a{
+        line-height: normal;
+    }
+    button{
+        background-color:#FFFFFF;
+        border-color: #DF0101;
+        color: #DF0101;
+    }
+    input,select{
+        border-color: #DF0101;
+        color: #DF0101;
+    }
+
+</style>
+<body>
+<big><big><strong><font color="#DF0101">Форма заявки на работу в зоопарке</font></strong></big></big>
+<p>
+<form action="/signup" method="post">
+<p><i><font color="#DF0101">Пожалуйста заполните форму. Обязательные поля помечены *</font></i></p>
+    <fieldset >
+        <legend><strong>Контактная информация</strong></legend>
+        <table>
+            <tr>
+        <p>
+            <td><label>Имя*</label></td>
+                <td><input type = "text" name = "name" required></td>
+        </p>
+            </tr>
+            <tr>
+        <p>
+            <td><label>Телефон</label></td>
+            <td><input type = "tel" name = "phone"></td>
+        </p>
+            </tr>
+            <tr>
+        <p>
+            <td><label>Email*</label></td>
+            <td><input type = "email" name = "email" required></td>
+        </p>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</p>
+<p>
+<form>
+    <fieldset>
+        <legend><strong>Персональная информация</strong></legend>
+<table>
+<tr>
+        <p>
+        <form action="/signup" method="post">
+           <td><label>Возраст*</label></td>
+           <td><input type = "number" name = "age" min = "0" max = "120" required></td>
+        </form>
+        </p>
+</tr>
+<tr>
+        <p>
+           <td><label>Пол</label></td>
+            <td><select name = "select" size = "1" >
+                <option>Женщина</option>
+                <option>Мужчина</option>
+                <option>Другой</option>
+            </select>
+            </td>
+        </p>
+</tr>
+        <p>
+        <tr>
+            <td>
+               <a> <label>Перечислите личные качества</label></a>
+            </td>
+            <td>
+                <textarea type = "text" name = "inf"></textarea>
+            </td>
+        </tr>
+        </p>
+</table>
+    </fieldset>
+</form>
+</p>
+<p>
+<form>
+    <fieldset>
+        <legend><strong>Выберите ваших любимых животных</strong> </legend>
+        <table>
+            <tr>
+                <td align="left">
+                    <p><input type="checkbox" name = "animal" value = "Зебра">Зебра</p>
+                    <p><input type="checkbox" name = "animal" value = "Слон">Слон</p>
+                </td>
+                <td align="left">
+                    <p><input type="checkbox" name = "animal" value = "Кошак">Кошак</p>
+                    <p><input type="checkbox" name = "animal" value = "Антилопа">Антилопа</p>
+                </td>
+                <td align = "left">
+                    <p><input type="checkbox" name = "animal" value = "Анаконда">Анаконда</p>
+                    <p><input type="checkbox" name = "animal" value = "Голубь">Голубь</p>
+                </td>
+                <td align="left">
+                    <p><input type="checkbox" name = "animal" value = "Человек">Человек</p>
+                    <p><input type="checkbox" name = "animal" value = "Краб">Краб</p>
+                </td>
+            </tr>
+        </table>
+        </p>
+    </fieldset>
+</form>
+</p>
+<p><button>Отправить иформацию</button></p>
+</body>
+</html>

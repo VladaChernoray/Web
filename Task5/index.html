@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Task_5</title>
+</head>
+<style>
+    body>div {
+        margin-bottom: 50px;
+    }
+
+    .container_A {
+        display: flex;
+        height: 500px;
+        width: 70%;
+    }
+
+    .div_left {
+        display: flex;
+        width: 33.3%;
+        flex-direction: column;
+    }
+
+    .div_middle {
+        display: flex;
+        width: 33.3%;
+        flex-direction: column;
+    }
+
+    .div_right {
+        display: flex;
+        width: 33.3%;
+        flex-direction: column;
+    }
+
+    .item {
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+    .bottom-item {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .container-2-A {
+        color: orange;
+        font-family: sans-serif;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+                "a a a"
+                "a a a"
+                "b c d"
+                "b e .";
+        border: 2px solid orange;
+        border-radius: 5px;
+        background-color: pink;
+    }
+
+    .container-item {
+        padding: 15px;
+        background-color: #ffdead;
+        border: 1px solid orange;
+        border-radius: 3px;
+    }
+
+    .first-container-layout {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+                "f"
+                "h"
+                "g";
+
+    }
+
+    .container-first-content {
+        padding: 10px;
+        background-color: lightyellow;
+        border: 1px solid yellow;
+    }
+    .grid-container {
+        display: grid;
+        grid-gap: 5px 5px;
+        width: 100%;
+        color: white;
+        grid-template-areas:
+                'h'
+                'c'
+                'f';
+    }
+
+    .grid-header {
+        height: 100px;
+        background-color: black;
+        border-radius: 5px;
+        grid-area: h;
+    }
+
+    .grid-content {
+        grid-area: c;
+        display: grid;
+        grid-gap: 5px 5px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .grid-item {
+        height: 100px;
+        background-color: black;
+
+        border-radius: 5px;
+    }
+
+    .grid-footer {
+        height: 100px;
+        background-color: black;
+        grid-area: f;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <div class="container_A">
+
+        <div class="div_left">
+            <div class="item" style="background-color: #EE82EE; flex-grow: 2.5;"></div>
+            <div style="display: flex; flex-grow: 2;">
+                <div class="item" style="background-color: #9400D3; flex-grow: 1;"></div>
+                <div style="display: flex; flex-direction: column; flex-grow: 1;">
+                    <div class="item" style="flex-grow: 1; background-color: pink;"></div>
+                    <div class="item" style="flex-grow: 3; background-color: magenta;"></div>
+                </div>
+            </div>
+
+            <div class="item bottom-item" style="background-color: #EE82EE; flex-grow: 1;"></div>
+        </div>
+
+        <div class="div_middle">
+            <div style="display: flex; flex-grow: 2.4;">
+                <div class="item" style="background-color: #9400D3; flex-grow: 1;"></div>
+                <div style="display: flex; flex-direction: column; flex-grow: 1;">
+                    <div class="item" style="flex-grow: 1; background-color: #FF00FF;"></div>
+                    <div class="item" style="flex-grow: 3; background-color: magenta;"></div>
+                </div>
+            </div>
+            <div class="item bottom-item" style="background-color: #EE82EE; flex-grow: 1;"></div>
+        </div>
+
+        <div class="div_right">
+            <div class="item" style="background-color: #FF00FF; flex-grow: 1;"></div>
+            <div style="display: flex; flex-grow: 1;">
+                <div class="item" style="background-color: #9400D3; flex-grow: 1;"></div>
+                <div class="item" style="background-color: #EE82EE; flex-grow: 3;"></div>
+            </div>
+            <div class="item" style="background-color: magenta; flex-grow: 3;"></div>
+            <div class="item bottom-item" style="background-color: pink; flex-grow: 0.7;"></div>
+        </div>
+    </div>
+
+    <div class="container_B">
+        <div class="header item"></div>
+        <div class="main-content">
+            <div class="main-content-left">
+                <div class="main-content-left-orange item"></div>
+                <div class="main-content-left-brown item"></div>
+            </div>
+            <div class="main-content-right item"></div>
+        </div>
+        <div class="footer item"></div>
+    </div>
+
+    <div class="container-2-A" style="width: 700px; height: 300px;">
+        <div class="container-item first-container-layout" style="grid-area: a">
+            <div class="container-first-content" style="grid-area: f">a</div>
+            <div class="container-first-content" style="grid-area: h">b</div>
+            <div class="container-first-content" style="grid-area: g">c</div>
+        </div>
+        <div class="container-item" style="grid-area: b">Two</div>
+        <div class="container-item" style="grid-area: c">Three</div>
+        <div class="container-item" style="grid-area: d">Four</div>
+        <div class="container-item" style="grid-area: e">Five</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-header"></div>
+        <div class="grid-content">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
+        <div class="grid-footer"></div>
+    </div>
+</body>
+
+</html>

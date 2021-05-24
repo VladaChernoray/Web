@@ -1,0 +1,443 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Abel", sans-serif;
+}
+@font-face {
+  font-family: "Abel", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+}
+.content {
+  max-width: 980px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.header {
+  background-color: black;
+}
+.header__content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.logo {
+  display: flex;
+}
+.logo__text {
+  margin-left: 30px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.num__phones {
+  display: flex;
+  flex-direction: column;
+}
+.logo__img {
+  width: 100px;
+  height: 100px;
+  background: url("icon_5.jpg") center;
+  object-fit: cover;
+}
+.info_set {
+  line-height: 15px;
+}
+.info {
+  font-family: "Abel", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: white;
+}
+.title__text {
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 20px;
+  color: white;
+}
+.under__title__text {
+  font-weight: 100;
+  color: white;
+  font-size: 20px;
+}
+.menu {
+  width: 100%;
+  background-color: white;
+}
+.navbar {
+  margin: 20px auto;
+}
+.navbar__item {
+  font-weight: 100;
+  color: black;
+  text-decoration: white;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.navbar__item:hover {
+  text-decoration: underline;
+}
+.slider {
+  min-height: 350px;
+  background-image: url("https://media.architecturaldigest.com/photos/584eeb98dcb583e908275a33/16:9/w_1280,c_limit/beaux-arts-nyc-08.jpg?mbid=social_retweet");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*----main-----*/
+.main__content {
+  margin-top: 15px;
+  margin-bottom: 300px;
+  flex: 1 1;
+}
+.left_content{
+  display: inline-block;
+  width: 200px;
+  background-color: black;
+  margin: 30px;
+  padding: 20px;
+  color: white;
+  box-shadow: 6px 6px 6px 3px black ;
+}
+.container{
+  display: block;
+  font-size: 18px;
+}
+ul{
+  list-style: none;
+}
+.container h2{
+  font-size: 24px;
+  color: gold;
+}
+.container ul li:hover{
+  color: gold;
+  text-decoration: underline;
+}
+
+.right_content{
+  display: inline-block;
+  width: 900px;
+  float: right;
+  padding: 15px;
+  color: white;
+  font-family: "Abel", sans-serif;
+}
+.inner_block{
+  display: block;
+  float: right;
+  width: 210px;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: black;
+  box-shadow: 6px 6px 6px 3px black ;
+}
+.inner_block h2{
+  font-size: 30px;
+}
+.inner_block h2:hover{
+  color: gold;
+}
+.inner_block h2 a{
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+.inner_block h2 a:hover{
+  color: gold;
+}
+
+.img_1{
+  margin:5px;
+  height:150px;
+  width: 200px;
+}
+.hr-shadow{
+  margin: 20px 0;
+  height: 10px;
+  border: none;
+  border-top: 1px solid black;
+  box-shadow: 0 10px 10px -10px black inset;
+}
+.img_2{
+  float: left;
+  padding: 30px;
+}
+.inf_cont{
+  display: block;
+  float: right;
+  margin: 5px;
+  width: 880px;
+  height: 300px;
+}
+.cont_1{
+  color: black;
+  display:inline-block;
+  margin: 10px;
+  width: 500px;
+  height: 150px;
+  font-size: 16px;
+}
+.cont_2{
+  color: black;
+  display:inline-block;
+  margin: 10px;
+  width: 320px;
+  height: 150px;
+  font-size: 16px;
+}
+.img_3{
+  float: left;
+  padding: 20px 50px;
+}
+/*----footer----*/
+.footer {
+  background-color: black;
+  padding: 40px 0;
+  color: white;
+}
+.company__name__text {
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+}
+.little__navbar {
+  display: flex;
+  flex-direction: column;
+}
+.little__navbar a {
+  text-decoration: underline;
+  color: white;
+  font-family: "Abel", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+.site__dev {
+  display: flex;
+}
+.site__dev__logo {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+@media screen and (max-width: 951px) {
+  .main__content {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .menu__news {
+    width: 100%;
+  }
+  .menu__about {
+    max-width: 100%;
+  }
+  .news__link {
+    margin-bottom: 30px;
+  }
+}
+.cont_box{
+  display: none;
+}
+.cont_box:target{
+  display: block;
+}
+.contact__box{
+  font-family: "Abel", sans-serif;
+  background-color: black;
+  opacity: 70%;
+  border-radius: 18px;
+  top: 50%;
+  left:50%;
+  position: fixed;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.form_{
+  margin: 40px;
+}
+.form{
+  -webkit-animation: animatezoom 0.6s;
+}
+.input-type{
+  background-color: white;
+  border-radius: 18px;
+  padding: 20px;
+  font-size: 20px;
+  width: 300px;
+  margin: 10px;
+}
+
+.textarea-field{
+  background-color: white;
+  color: black;
+  border-radius: 18px;
+  padding: 20px;
+  width: 300px;
+  font-size: 20px;
+  margin: 10px;
+}
+.btn{
+  border-radius: 20px;
+  color: black;
+  padding: 12px;
+  background-color: white ;
+  width: 340px;
+  font-size: 16px;
+  margin: 10px;
+}
+.btn a{
+  text-decoration: none;
+}
+@keyframes animatezoom {
+  from {transform: scale(0)}
+}
+@media screen and (max-width: 830px) {
+  .navbar__item {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 730px) {
+  .navbar__item {
+    font-size: 0.95rem;
+  }
+}
+/*--test_page--*/
+.inf_block{
+  display: inline-block;
+  width: 700px;
+  margin-left: 40px;
+  padding: 10px;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+.main p{
+  text-align: center;
+  font-size: 60px;
+  padding: 30px;
+}
+.picture_block_t{
+  margin-right: 40px;
+  padding: 10px;
+  display: inline-block;
+  float: right;
+}
+.side__img{
+  width: 350px;
+  height: 450px;
+  box-shadow: 6px 6px 6px 3px black;
+}
+
+.main___content {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  padding-bottom: 60px;
+  flex: 1 1;
+}
+.left_content h2 a{
+  text-decoration: none;
+  color: gold;
+}
+/*test_page_collection*/
+.test_content_2{
+  display: block;
+}
+.test_content_2 p{
+  text-align: center;
+  font-size: 30px;
+  padding: 50px 0 30px;
+}
+.section{
+  display: inline-flex;
+  margin: 10px 25px;
+  padding: 0 30px;
+}
+.picture_block{
+  display: inline-block;
+  width: 770px;
+  height: 300px;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.icon{
+  float:right;
+  padding: 15px;
+}
+.top_icon{
+  color: white;
+  border: 2px white solid;
+  background-color: grey;
+  padding: 5px;
+  width: 55px;
+}
+.top_icon:hover{
+  color: black;
+  background-color: gold;
+  border: 2px black solid;
+}
+.txt{
+  display: table-cell;
+  vertical-align: bottom;
+  height: 300px;
+  padding:0 0 50px 15px;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.text_block{
+  display: inline-flex;
+  text-align: center;
+  width: 350px;
+  padding: 100px 15px;
+  font-size: 16px;
+}
+.picture_block_1{
+  background: url("https://th.bing.com/th/id/R3220ba969095ba9fadfaa2c393dc9531?rik=3w9bzN2w3s1xUg&pid=ImgRaw") center;
+}
+.picture_block_2{
+  background: url("https://static01.nyt.com/images/2016/09/28/well/well_guide_metropolitan-slide-I91T/well_guide_metropolitan-slide-I91T-facebookJumbo-v4.jpg") center;
+}
+.picture_block_3 {
+  background: url("https://media.vanityfair.com/photos/5a4e7bb6518d781e720e1059/16:9/w_1280,c_limit/Metropolitan-Museum-of-Art-Tourist-Rate.jpg") center;
+}
+.picture_block_4{
+  background: url("https://th.bing.com/th/id/Rca2d155a094b96a06af381c9d811851c?rik=Q2s5XNY%2b8Skg0Q&pid=ImgRaw")center;
+}
+.subscribe_window{
+  display: inline-block;
+  margin: 30px;
+  padding: 45px;
+  background-color: white;
+  font-size: 22px;
+  text-align: center;
+}
+.subscribe_window label{
+  margin-right: 20px;
+}
+.subscribe_window input:nth-child(2){
+  width: 600px;
+  height: 45px;
+  border: 1px black solid;
+  margin-right: 0;
+  padding-left: 20px;
+  background-color: #F0F0F0;
+  font-size: 20px;
+}
+.subscribe_window input:nth-child(3){
+  height: 50px;
+  background-color: black;
+  color: white;
+  width: 140px;
+  margin-left: 0;
+  border:none;
+}
+.subscribe_window input:nth-child(3):hover{
+  background-color: gold;
+  color: black;
+}

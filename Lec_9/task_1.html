@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>grid</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-gap: 50px 50px;
+        }
+        .repeat{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .norepeat{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .grid-item{
+            background-color: deeppink;
+        }
+        .grid-item1{
+            background-color: #9400D3;
+        }
+        .smth{
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(3, 50px);
+        }
+        .templates{
+            grid-template-areas:
+                          ". . a a a a"
+                          "b b b . . c"
+                          "d d d d d e";
+        }
+        .templates1{
+            grid-template-areas:
+                          "a . b b . c"
+                          "a . d . . c"
+                          "a . d . . e";
+        }
+        .fir{
+            grid-column-start: 3;
+            grid-column-end: 7;
+        }
+        .sec{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .thi{
+            grid-column-start: 6;
+        }
+        .fou{
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+        .fif{
+
+        }
+        .fi{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .se{
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        .th{
+            grid-column-start: 6;
+            grid-column-end: 7;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .fo{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .ff {
+            grid-row-start: 3;
+            grid-column-start: 6;
+            grid-column-end: 7;
+        }
+        .g1{
+            grid-area: a;
+        }
+        .g2{
+            grid-area: b;
+        }
+        .g3{
+            grid-area: c;
+        }
+        .g4{
+            grid-area: d;
+        }
+        .g5{
+            grid-area: e;
+        }
+        .example-container{
+            display: grid;
+            grid-gap: 5px 5px;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            grid-template-areas:
+                            "a a a . . b"
+                            "c c d d d d"
+                            "c c d d d d";
+        }
+        .ex1{
+            padding: 5% 5% 5% 5%;
+            font-size: 300%;
+            color: white;
+            border-radius: 15px;
+            background-color: #222222;
+            grid-area: a;
+        }
+        .ex2{
+            padding: 5% 5% 5% 5%;
+            font-size: 300%;
+            color: white;
+            border-radius: 15px;
+            background-color: #222222;
+            grid-area: b;
+        }
+        .ex3{
+            padding: 5% 5% 5% 5%;
+            font-size: 300%;
+            color: white;
+            border-radius: 15px;
+            background-color: #222222;
+            grid-area: c;
+        }
+        .ex4{
+            border-radius: 15px;
+            background-color: #222222;
+            grid-area: d;
+        }
+        .d{
+            border-radius: 15px;
+            padding: 2% 2% 2% 2%;
+            display: grid;
+            grid-gap: 5px 5px;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 180px);
+            grid-template-areas:
+                            "e e f f f"
+                            "e e . g g";
+        }
+        .e{
+            padding: 5% 5% 5% 5%;
+            font-size: 300%;
+            border-radius: 15px;
+            background-color: #9400D3;
+            grid-area: e;
+            color: #EE82EE;
+        }
+        .f{
+            padding: 5% 5% 5% 5%;
+            font-size: 300%;
+            border-radius: 15px;
+            background-color: #9400D3;
+            grid-area: f;
+            color: #EE82EE;
+        }
+        .g{
+            padding: 5% 5% 5% 5%;
+            font-size: 300%;
+            border-radius: 15px;
+            background-color: #9400D3;
+            grid-area: g;
+            color: #EE82EE;
+        }
+    </style>
+</head>
+<body>
+<div class="grid-container norepeat">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="grid-container repeat">
+    <div class="grid-item1">1</div>
+    <div class="grid-item1">2</div>
+    <div class="grid-item1">3</div>
+    <div class="grid-item1">4</div>
+    <div class="grid-item1">5</div>
+    <div class="grid-item1">6</div>
+    <div class="grid-item1">7</div>
+    <div class="grid-item1">8</div>
+    <div class="grid-item1">9</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="grid-container smth">
+    <div class="grid-item fir">1</div>
+    <div class="grid-item sec">2</div>
+    <div class="grid-item thi">3</div>
+    <div class="grid-item fou">4</div>
+    <div class="grid-item fif">5</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="grid-container smth">
+    <div class="grid-item1 fi">1</div>
+    <div class="grid-item1 se">2</div>
+    <div class="grid-item1 th">3</div>
+    <div class="grid-item1 fo">4</div>
+    <div class="grid-item1 ff">5</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="grid-container smth templates">
+    <div class="grid-item g1">1</div>
+    <div class="grid-item g2">2</div>
+    <div class="grid-item g3">3</div>
+    <div class="grid-item g4">4</div>
+    <div class="grid-item g5">5</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="grid-container smth templates1">
+    <div class="grid-item1 g1">1</div>
+    <div class="grid-item1 g2">2</div>
+    <div class="grid-item1 g3">3</div>
+    <div class="grid-item1 g4">4</div>
+    <div class="grid-item1 g5">5</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="example-container">
+    <div class="ex1">A</div>
+    <div class="ex2">B</div>
+    <div class="ex3">C</div>
+    <div class="ex4 d">
+        <div class="e">E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+    </div>
+</div>
+</body>
+</html>

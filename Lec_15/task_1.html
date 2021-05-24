@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="start">Start</button>
+<div id="container"></div>
+<div id="op1">+</div>
+<div id="op2">-</div>
+<script>
+    document.getElementById('start').onclick = function (){
+        alert("Start?");
+        let c = document.getElementById('container');
+        let f = document.createElement('form');
+        let p1 = document.createElement('input');
+        p1.type = "number";
+        p1.id = "p1";
+        f.appendChild(p1);
+        let p2 = document.createElement('input');
+        p2.type = "number";
+        p2.id = "p2";
+        f.appendChild(p2);
+        c.appendChild(f);
+
+    }
+    document.getElementById('op1').onclick = function() {
+        let a = parseInt(document.getElementById('p1').value, 10);
+        let b = parseInt(document.getElementById('p2').value, 10);
+        alert(a + b);
+    }
+    document.getElementById('op1').onclick = function() {
+        let a = parseInt(document.getElementById('p1').value, 10);
+        let b = parseInt(document.getElementById('p2').value, 10);
+        alert(a - b);
+    }
+</script>
+</body>
+</html>

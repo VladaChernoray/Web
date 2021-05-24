@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title></title>
+
+    <style>
+        html,
+        body {
+            font-size: 20px;
+        }
+
+        .section-team {
+            background-color: darkgray;
+            padding: 30px;
+        }
+
+        .title {
+            text-align: center;
+
+            margin-bottom: 20px;
+        }
+
+        .text {
+            text-align: center;
+            text-justify: auto;
+            margin-bottom: 18px;
+        }
+
+        .avatar-wrapper {
+            height: 210px;
+            width: 210px;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 50%;
+            border: 2px solid red;
+            margin-bottom: 20px;
+        }
+
+        .avatar {
+            width: 100%;
+        }
+
+        .avatar--cropped {
+            object-fit: contain;
+            width: 425%;
+            height: 425%;
+        }
+
+        .avatar--oko {
+            margin: -380px 0 0 -325px;
+        }
+
+        .avatar--grai {
+            width: 300%;
+            height: 300%;
+
+            margin: -135px 0 0 -269px;
+        }
+
+        .avatar--tur {
+            width: 400%;
+            height: 400%;
+
+            margin: -225px 0 0 -190px;
+        }
+
+        .card {
+            border-radius: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        .card:nth-child(even) {
+            background-color: gray;
+        }
+
+        .socials {
+            display: flex;
+            width: 100%;
+            padding: 0 10%;
+            justify-content: space-around;
+        }
+
+        .social-img {
+            display: block;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section section-team">
+        <div class="container">
+            <h2 class="title">Наша команда</h2>
+            <p class="text">Ми три козаки із Запорізької Січі. Багато мандруємо по світу, спілкуємось з людьми з різних
+                країн та епох. Навіть зустрічаємось з інопланетянами.
+            </p>
+
+            <div class="row section-container">
+                <div class="card col-12 col-sm-12 col-md-4">
+
+                    <div class="avatar-wrapper">
+                        <img class="avatar avatar--cropped avatar--oko"
+                            src="https://gdb.rferl.org/BD27754D-9E35-4866-8F21-FC7C0497A8EF.png" alt="oko">
+                    </div>
+
+                    <h5 class="title">Козак Око</h5>
+
+                    <p class="text">Маленький козак, але бадьорий та войовничий.</p>
+
+                    <div class="socials">
+                        <img class="social-img"
+                             src = "https://www.flaticon.com/svg/vstatic/svg/2111/2111453.svg?token=exp=1618258774~hmac=60ffc881febde8dce4de600359143dd5"
+                            alt="google-plus">
+                        <img class="social-img"
+                            src="https://www.flaticon.com/svg/vstatic/svg/145/145802.svg?token=exp=1618258939~hmac=4d552d6dd7dd81133432962c4483ee0f"
+                            alt="facebook">
+                        <img class="social-img"
+                            src="https://www.flaticon.com/svg/vstatic/svg/2111/2111646.svg?token=exp=1618259017~hmac=c46964a1c4c6f8761827776945645085"
+                            alt="telegram">
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-12 col-md-4">
+
+                    <div class="avatar-wrapper">
+                        <img class="avatar avatar--cropped avatar--grai"
+                            src="https://gdb.rferl.org/BD27754D-9E35-4866-8F21-FC7C0497A8EF.png" alt="grai">
+                    </div>
+
+                    <h5 class="title">Козак Грай</h5>
+
+                    <p class="text">Отаман нашої команди. Спокійний та кмітливий козак.</p>
+
+                    <div class="socials">
+                        <img class="social-img"
+                            src="https://www.flaticon.com/svg/vstatic/svg/2111/2111453.svg?token=exp=1618258774~hmac=60ffc881febde8dce4de600359143dd5"
+                            alt="google-plus">
+                        <img class="social-img"
+                            src="https://www.flaticon.com/svg/vstatic/svg/145/145802.svg?token=exp=1618258939~hmac=4d552d6dd7dd81133432962c4483ee0f"
+                            alt="facebook">
+                        <img class="social-img"
+                            src="https://www.flaticon.com/svg/vstatic/svg/2111/2111646.svg?token=exp=1618259017~hmac=c46964a1c4c6f8761827776945645085"
+                            alt = "telegram">
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-12 col-md-4">
+
+                    <div class="avatar-wrapper">
+                        <img class="avatar avatar--cropped avatar--tur"
+                            src="https://gdb.rferl.org/BD27754D-9E35-4866-8F21-FC7C0497A8EF.png" alt="tur">
+                    </div>
+
+                    <h5 class="title">Козак Тур</h5>
+
+                    <p class="text">Здоровий та сильний козак. Часто буває сором'язливим.</p>
+
+                    <div class="socials">
+                        <img class="social-img"
+                            src="https://www.flaticon.com/svg/vstatic/svg/2111/2111453.svg?token=exp=1618258774~hmac=60ffc881febde8dce4de600359143dd5"
+                            alt="google-plus">
+                        <img class="social-img"
+                            src="https://www.flaticon.com/svg/vstatic/svg/145/145802.svg?token=exp=1618258939~hmac=4d552d6dd7dd81133432962c4483ee0f"
+                            alt="facebook">
+                        <img class="social-img"
+                            src="https://www.flaticon.com/svg/vstatic/svg/2111/2111646.svg?token=exp=1618259017~hmac=c46964a1c4c6f8761827776945645085"
+                            alt="telegram">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
