@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <title>HW_6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.map"></script>
+
+    <!--<link rel="stylesheet" href="bootstrap-5.0.1">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<header>
+    <div class="container-fluid bg-dark-black top text-light">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-3 p-4 ml-lg-5">
+                        <img src="icon_5.jpg" alt="logo">
+                    </div>
+                    <div class="col-lg-5 pt-3 pb-2">
+                        <h3>The Metropolitan Museum of Art</h3>
+                        <h5>Read, watch, and listen. Art wherever you are.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-7">
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="container justify-content-end p-1 m-lg-4">
+                            <span class="text-center"><p>1000 Fifth Avenue</p></span>
+                            <span class="text-center"><p>New York, NY 10028</p></span>
+                            <span class="text-center"><p>Phone: 212-535-7710</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-light p-0">
+        <div class="container-fluid justify-content-center">
+            <div class="nav navbar">
+                <span class="nav-item">
+                    <a class="nav-link text-black-50" href="#">Visit</a>
+                </span>
+                <span>|</span>
+                <span class="nav-item">
+                    <a class="nav-link text-black-50" href="#">Exhibitors and events</a>
+                </span>
+                <span>|</span>
+                <span class="nav-item">
+                    <a class="nav-link text-black-50" href="test_page_collection.html">Collection</a>
+                </span>
+                <span>|</span>
+                <span class="nav-item">
+                    <a class="nav-link text-black-50" href="#">Learn</a>
+                </span>
+                <span>|</span>
+                <span class="nav-item">
+                    <a class="nav-link text-black-50" href="#">Membership</a>
+                </span>
+                <span>|</span>
+                <span class="nav-item">
+                    <a class="nav-link text-black-50" href="#modal_window">Support us</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="modal" role="dialog" id="modal_window">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark-black text-light">
+                <h1 class="text-center">Contact us</h1>
+            </div>
+            <div class="modal-body bg-dark-black">
+                    <div class="input-group text-light p-3 bg-dark-black">
+                        <div class="row mb-3"></div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label">Name:   </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label">Email:   </label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label">Phone:   </label>
+                            <div class="col-sm-9">
+                                <input type="tel" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label">Message:   </label>
+                            <div class="col-sm-9">
+                                <textarea type="text" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                <div class="justify-content-center">
+                        <button class="btn bg-light offset-8" type="submit"><a href="index.html" class="sub_btn">Send Message</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<div class="container-fluid slider_1"></div>
+<!--
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+
+    <div class="carousel-inner">
+
+        <div class="item active">
+            <div class="slider_1 d-block"></div>
+            <div class="carousel-caption"></div>
+        </div>
+
+        <div class="item">
+            <div class="slider_2 d-block"></div>
+            <div class="carousel-caption"></div>
+        </div>
+
+        <div class="item">
+            <div class="slider_3 d-block"></div>
+            <div class="carousel-caption"></div>
+        </div>
+
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>-->
+<!--
+<div class="carousel slide" data-bs-ride="carousel" id="carousel_slider">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel_slider" data-bs-slide="0" aria-current="true" class="active"></button>
+        <button type="button" data-bs-target="#carousel_slider" data-bs-slide="1"></button>
+        <button type="button" data-bs-target="#carousel_slider" data-bs-slide="2"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="slider_1 d-block"></div>
+        </div>
+        <div class="carousel-item">
+            <div class="slider_2 d-block"></div>
+        </div>
+        <div class="carousel-item">
+            <div class="slider_3 d-block"></div>
+        </div>
+    </div>
+    <button class = "carousel-control-prev" data-bs-target="#carousel_slider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+    </button>
+    <button class="carousel-control-next" data-bs-target="#carousel_slider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+    </button>
+</div>-->
+<main>
+    <div class="container-fluid bg-light-white">
+        <div class="row">
+            <div class="col-lg-3 m-5 bg-dark-black p-4 cnt">
+                <h2>Visit</h2>
+                <ul>
+                    <li>Visit</li>
+                    <li>Audio guide</li>
+                    <li>Object trails</li>
+                    <li>Family visits</li>
+                    <li>Out-of-hours tours</li>
+                    <li>Accessibility</li>
+                    <li>Museum map</li>
+                    <li>Group visits</li>
+                    <li>Tours and talks</li>
+                    <li>Food and drink</li>
+                </ul>
+
+                <h2>Exhibitions and events</h2>
+
+                <h2><a href="test_page_collection.html">Collection</a></h2>
+                <ul>
+                    <li>Collection</li>
+                    <li>Blog</li>
+                    <li>Galleries</li>
+                    <li>Collection online</li>
+                </ul>
+
+                <h2>Membership</h2>
+                <ul>
+                    <li>Membership</li>
+                    <li>Events</li>
+                    <li>Visiting as a Member</li>
+                    <li>Buy membership</li>
+                </ul>
+
+                <h2>Support us</h2>
+                <ul>
+                    <li>Donate</li>
+                    <li>Leave a legacy</li>
+                    <li>Corporate support</li>
+                    <li>Become a Volunteer</li>
+                </ul>
+            </div>
+            <div class="col-lg-8 p-3 pt-5">
+                <div class="row">
+                    <div class="col-sm-4 pb-5">
+                        <div class="card text-light cnt border-0">
+                            <div class="card-body bg-dark-black">
+                                <div class="card-title text-center">
+                                    <h2><b><a href="test_page_galleries.html">Galleries</a></b></h2>
+                                </div>
+                                <img src="https://th.bing.com/th/id/R18ca3f4ceee9f8aedef6902ad4c7db92?rik=K4g4vj8XK1vpKQ&pid=ImgRaw" class="card-img">
+                                <div class="card-body">
+                                    <div class="card-text">
+                                        <p>Walk through two million years of history on our one-way route that travels through more than 50 galleries.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pb-5">
+                        <div class="card text-light cnt border-0">
+                            <div class="card-body bg-dark-black">
+                                <div class="card-title text-center">
+                                    <h2><b>Events</b></h2>
+                                </div>
+                                <img src="https://th.bing.com/th/id/R3abfcbeff25d288dbc54991006d0e70c?rik=8yZept3lghYyFA&pid=ImgRaw" class="card-img">
+                                <div class="card-body">
+                                    <div class="card-text">
+                                        <p> Discover more about our upcoming exhibitions, with community organisations, charities and individuals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pb-5">
+                        <div class="card text-light cnt border-0">
+                            <div class="card-body bg-dark-black">
+                                <div class="card-title text-center">
+                                    <h2><b>Family visits</b></h2>
+                                </div>
+                                <img src="https://chrysler.org/wp-content/uploads/Chrysler-Museum-Kids-Guide-1920x1280.jpg" class="card-img">
+                                <div class="card-body">
+                                    <div class="card-text">
+                                        <p>From object trails to information on pushchairs, find out what family activities are running.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pb-5">
+                        <div class="card text-light cnt border-0">
+                            <div class="card-body bg-dark-black">
+                                <div class="card-title text-center">
+                                    <h2><b>Schools</b></h2>
+                                </div>
+                                <img src="https://apluscolorado.org/wp-content/uploads/2018/02/High-School-Students-1024x683.jpg" class = "card-img">
+                                <div class="card-body">
+                                    <div class="card-text pb-4">
+                                        <p>Organise a school visit and find inspiring classroom resources that will bring history to life.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pb-5">
+                        <div class="card text-light cnt border-0">
+                            <div class="card-body bg-dark-black">
+                                <div class="card-title text-center">
+                                    <h2><b>Communities</b></h2>
+                                </div>
+                                <img src="https://th.bing.com/th/id/OIP.RxZnTQ9P-xRhdWy3uQvPKgHaE8?pid=ImgDet&rs=1" class="card-img">
+                                <div class="card-body">
+                                    <div class="card-text">
+                                        <p>Find out more about our programme of activities, projects and learning opportunities with local communities.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pb-5">
+                        <div class="card text-light cnt border-0">
+                            <div class="card-body bg-dark-black">
+                                <div class="card-title text-center">
+                                    <h2><b>Projects</b></h2>
+                                </div>
+                                <img src="https://assets3.thrillist.com/v1/image/2758500/size/gn-gift_guide_variable_c.jpg" class="card-img">
+                                <div class="card-body">
+                                    <div class="card-text pb-4">
+                                        <p>We work with community organisations, charities and individuals to explore the collections in beneficial ways.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hr mt-5">
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 p-5 pb-0">
+                <img src="icon_5.jpg" alt="logo" class="offset-4">
+            </div>
+            <div class="col-lg-5 p-5 pb-0">
+                <p>Collection online has been completely redeveloped, making it much easier to find what you want. It allows access to almost four and a half million objects in more than two million records. The search is more intuitive and now offers suggestions as you type.</p>
+            </div>
+            <div class="col-lg-3 p-5 pb-0">
+                <p>The amazingly preserved deerskin map from North America, or this delightful drawing by Raphael of an old man's head – just a few of the thousands of highlights to discover.</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container-fluid bg-dark-black text-light">
+        <div class="row">
+            <div class="col-lg-5 p-5">
+                <p class="offset-3"> © 2000–2021 The Metropolitan Museum of Art.<br />
+                    All rights reserved.</p>
+            </div>
+            <div class="col-lg-3 p-3">
+                <nav class="nav navbar">
+                    <p class="nav-link link"> <a href="#">Site index</a></p>
+                    <p class="nav-link link"><a href="#">Terms and conditions</a></p>
+                    <p class="nav-link link"><a href="#">Cookies</a></p>
+                   <p class="nav-link link"><a href="#">Primacy policy</a></p>
+                   <p class="nav-link link"> <a href="#">Contact information</a></p>
+                </nav>
+            </div>
+            <div class="col-lg-3 p-5">
+                <img src="icon_5.jpg" alt="logo" class="offset-4">
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
