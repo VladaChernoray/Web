@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seminar</title>
+    <meta name="viewport" content="width=width-device, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <style>
+        input[type=radio] {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        #label-1{
+            bottom: 0px;
+            margin-left: 20%;
+        }
+
+        #label-2{
+            bottom: 0px;
+            margin-left: 30%;
+        }
+
+        #label-3{
+            bottom: 0px;
+            margin-left: 40%;
+        }
+
+        #label-4{
+            bottom: 0px;
+            margin-left: 50%;
+        }
+
+        #label-5{
+            bottom: 0px;
+            margin-left: 60%;
+        }
+
+        .for-radio {
+            -webkit-appearance: push-button;
+            -moz-appearance: button;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .for-radio:hover {
+            color: #EDAE49;
+        }
+
+        #trips{
+        }
+
+        .page{
+            visibility: hidden;
+            width: 100%;
+        }
+
+        #first-page, #second-page, #third-page, #fourth-page, #fifth-page{
+            box-sizing: border-box;
+        }
+
+        #second-page, #third-page, #fourth-page, #fifth-page{
+            margin-left: -99%;
+        }
+
+        #toggle-1:checked ~ #first-page {
+            visibility: visible;
+        }
+
+        #toggle-1:checked ~ #label-1 {
+            font-size: 18px;
+            color: red;
+        }
+
+        #toggle-2:checked ~ #second-page {
+            visibility: visible;
+        }
+
+        #toggle-2:checked ~ #label-2 {
+            font-size: 18px;
+            color: red;
+        }
+
+        #toggle-3:checked ~ #third-page {
+            visibility: visible;
+        }
+
+        #toggle-3:checked ~ #label-3 {
+            font-size: 18px;
+            color: red;
+        }
+
+        #toggle-4:checked ~ #fourth-page {
+            visibility: visible;
+        }
+
+        #toggle-4:checked ~ #label-4 {
+            font-size: 18px;
+            color: red;
+        }
+
+        #toggle-5:checked ~ #fifth-page {
+            visibility: visible;
+        }
+
+        #toggle-5:checked ~ #label-5 {
+            font-size: 18px;
+            color: red;
+        }
+
+        .flag{
+            width: 40%;
+            height: 260px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<article id="trips" class="position-relative container-fluid d-flex w-100 p-5">
+    <input type="radio" id="toggle-1" checked="checked" name="pages">
+    <label id="label-1" class="position-absolute for-radio" for="toggle-1">1</label>
+    <input type="radio" id="toggle-2" name="pages">
+    <label id="label-2" class="position-absolute for-radio" for="toggle-2">2</label>
+    <input type="radio" id="toggle-3" name="pages">
+    <label id="label-3" class="position-absolute for-radio" for="toggle-3">3</label>
+    <input type="radio" id="toggle-4" name="pages">
+    <label id="label-4" class="position-absolute for-radio" for="toggle-4">4</label>
+    <input type="radio" id="toggle-5" name="pages">
+    <label id="label-5" class="position-absolute for-radio" for="toggle-5">5</label>
+    <div id="first-page" class="d-block row min-h-100 page">
+        <h1>Italy</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/188px-Flag_of_Italy.svg.png" class="flag" alt="Italy flag">
+        <div>
+            <h3>Cinque Terre</h3>
+            <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-italy/cinque_terre.jpg?v=3e78eb97b41d2da7ed764e28315d3d05" alt="Cinque Terre" class="col-11 col-sm-8">
+            <div>
+                Five quaint fishing villages awash with colors of blue, yellow and pink all hug cliff sides that slope down to the sea. These villages and the surrounding green hills make up the Cinque Terre National Park, one of Italy’s popular tourist destinations. Located in Italy’s northwestern coastal region of Liguria, the villages of Cinque Terre feature some of the country’s most beautiful landscapes that include wine terraces dating back to hundreds of years.
+                Meaning “Five Lands,” Cinque Terre comprises the five villages of Riomaggiore, Manarola, Vernazza, Monterosso and Corniglia. Riomaggiore boasts a medieval castle and the bustling main street of Via Colombo while Manarola is filled with colorful boats, swimming holes and caves. Surrounded by olive groves, Vernazza offers a lively nightlife scene. The beautiful beach of Monterossa is lined with resorts while sloping vineyards adorn Corniglia. Rich in agriculture and fishing, the Cinque Terre villages are teeming in cafes and trattorias, which serve locally grown wine, olives, cheeses, pasta, seafood and homemade breads.
+            </div>
+            <div>
+                Price: 200$
+            </div>
+            <input type="checkbox" id="it-1">
+            <label for="it-1">Add to tour</label>
+            <h3>Amalfi Coast</h3>
+            <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-italy/amalfi_coast.jpg?v=1" alt="Amalfi Coast" class="col-11 col-sm-8">
+            <div>
+                Situated in Italy’s southwestern region of Campania, the Amalfi Coast is known for its extraordinary beauty that makes it one of Italy’s top tourist destinations. Stretching 30 miles along the southern side of the Sorrento Peninsula, the Amalfi Coast is prized for its picturesque coastline that features shimmering bays, craggy cliffs, lemon tree gardens, multicolored villas and ritzy resorts.
+
+                One of the most romantic and posh towns along the Amalfi Coast, Positano‘s many calling cards include beautiful pebbled beaches, pastel houses, scenic mountains, waterfalls and a 13th century Black Madonna.
+            </div>
+            <div>
+                Price: 250$
+            </div>
+            <input type="checkbox" id="it-2">
+            <label for="it-2"></label>
+            <h3>Pompeii</h3>
+            <img src="https://www.touropia.com/gfx/d/lost-cities/pompeii.jpg?v=8cac98c3ecabc49bfc29a68e0e60b9bb" alt="Pompeii" class="col-11 col-sm-8">
+            <div>
+                One of Italy’s most visited tourist destinations, Pompeii is a famous Roman city which was buried under several feet of volcanic ash for nearly 1,700 years after the cataclysmic eruption of Mt. Vesuvius. Excavation of Pompeii began in 1748, and the site is yet to be totally unearthed. The site is located near the modern city of Naples.
+
+                A tour of Pompeii offers a fascinating insight into the everyday life of the ancient Roman world. Visitors can walk along the ancient streets to see the remains of shops, bars, bakeries, brothels, baths and residential homes as well as buildings that served as commercial and religious centers. Some of the most significant structures include the Amphitheatre, the Forum, the Temple of Apollo, the Basilica and the Granary Market, which contains a large number of artifacts and plaster casts of people and dogs that died during the catastrophe. Within the architecture of Pompeii’s ancient buildings, there is a large number of art works and frescoes depicting erotica, mythological characters and hunting scenes.
+            </div>
+            <div>
+                Price: 100$
+            </div>
+            <input type="checkbox" id="it-3">
+            <label for="it-3">Add to tour</label>
+        </div>
+    </div>
+    <div id="second-page" class="d-block row page">
+        <h1>Malta</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Malta.svg/383px-Flag_of_Malta.svg.png" class="flag" alt="Malta flag">
+        <h3>Valletta: Malta's Elegant Capital</h3>
+        <img src="https://www.planetware.com/photos-large/M/malta-valletta.jpg" alt="Malta" class="col-11 col-sm-8">
+        <div>
+            A strategically important seaport, Valletta is the elegant capital of the Republic of Malta. The entire city is testimony to the grandeur of the Knights of Malta, the European noblemen who were granted the Maltese Islands by the King of Spain in 1530. The knights created a capital worthy of their aristocratic stature, on par with other great European capitals. Valletta's regular grid plan and orderly public squares reveal the knights' logical 16th-century urban planning.
+
+            Tourists can easily navigate this small city that is bounded by two harbors: the Grand Harbor and Marsamxett Harbor. The heart of the city is Saint John's Co-Cathedral, a 16th-century church built by the different Orders of the Knights, hailing from various countries such as France, Spain, and Italy. Visitors are surprised by the lavish interior with its opulent gilded decor.
+        </div>
+        <div>
+            Price: 100$
+        </div>
+        <input type="checkbox" id="m-1">
+        <label for="m-1">Add to tour</label>
+        <h3>The Idyllic Island of Gozo</h3>
+        <img src="https://www.planetware.com/wpimages/2019/06/malta-top-attractions-island-of-gozo.jpg" alt="Gozo" class="col-11 col-sm-8">
+        <div>Gozo Island is the most idyllic destination of the Maltese Islands. With its quiet towns and pristine beaches, this little island is the perfect place to enjoy a relaxing vacation for several days or even a weeklong stay. Although Gozo is less developed than Malta, the island has plenty of cultural attractions: a fortified medieval city, Victoria; a bustling seaside resort, Marsalforn; and the most important archaeological site of the Maltese Islands, Ggantija Temples, dating back to around 3500 BC.
+
+            Visitors enjoy the island's bucolic landscape, a delightful retreat from the modern world. A patchwork of small farms cover gently rolling hills and valleys. Hillsides lead down to protected beaches and quaint old fishing ports. A favorite beach is at Ramla Bay with a wide, sandy shore and gentle waters that are safe for swimming. There are also traditional villages perched on hilltops and surrounded by valleys.</div>
+        <div>
+            Price: 230$
+        </div>
+        <input type="checkbox" id="m-2">
+        <label for="m-2">Add to tour</label>
+        <h3>The Medieval Hilltop Town of Mdina, Island of Malta</h3>
+        <img src="https://www.planetware.com/photos-large/M/malta-mdina-medieval-hilltop-village.jpg" alt="The Medieval Hilltop Town of Mdina" class="col-11 col-sm-8">
+        <div>
+            Mdina offers an escape to a fairy-tale city. Listed as a UNESCO World Heritage Site, this enchanting medieval hilltop town is steeped in history. Tourists must pass through the dramatic Main Gate to enter the city, giving the impression of walking back in time. Within the city's immense, ancient ramparts is a delightful world of car-free streets and beautiful, old sandstone buildings.
+
+            The most important monument in Mdina is the Cathedral of Saint Paul, a glorious Baroque building designed by the Maltese architect Lorenzo Gafa. The lavishly decorated sanctuary features a magnificent dome, marble columns, gilded details, and gorgeous ceiling paintings. The cathedral possesses a precious 12th-century icon of the Madonna and renowned works of art by celebrated Maltese painter Mattia Preti.
+        </div>
+        <div>
+            Price: 200$
+        </div>
+        <input type="checkbox" id="m-3">
+        <label for="m-3">Add to tour</label>
+    </div>
+    <div id="third-page" class="d-block row page">
+        <h1>France</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/375px-Flag_of_France.svg.png" class="flag" alt="France">
+        <h3>Chateau de Chenonceau</h3>
+        <img src="https://www.touropia.com/gfx/d/tourist-attractions-in-france/chateau_de_chenonceau.jpg?v=1" alt="Chateau de Chenonceau" class="col-11 col-sm-8">
+        <div>
+            The Chenonceau Chateau is perhaps the most well-known chateau in the Loire Valley. The chateau, built in the 16th century, spans the River Cher, with passageways for boats at the bottom. After Versailles, it is the most visited chateau in France, and is noted for lovely gardens. It was restored after being bombed in World War II.
+        </div>
+        <div>
+            Price: 1000$
+        </div>
+        <input type="checkbox" id="f-1">
+        <label for="f-1">Add to tour</label>
+        <h3>Le Puy-en-Velay</h3>
+        <img src="https://www.touropia.com/gfx/d/tourist-attractions-in-france/le_puy_en_velay.jpg?v=9de964da91e9da3aba020f433e66ebb5" alt="Le Puy-en-Velay" class="col-11 col-sm-8">
+        <div>
+            Le Puy-en-Velay, in southern France, is famous for three things: its cathedral, lentils and making lace. A shrine to the Virgin Mary atop Mons Anicius has attracted pilgrims from before the Middle Ages. Notre Dame Cathedral is the most popular tourist attraction. Visitors also might want to try Verveine, green liquor flavored with verbena.
+        </div>
+        <div>
+            Price: 130$
+        </div>
+        <input type="checkbox" id="f-2">
+        <label for="f-2">Add to tour</label>
+        <h3>Epernay Champagne</h3>
+        <img src="https://www.touropia.com/gfx/d/tourist-attractions-in-france/epernay_champagne.jpg?v=1" alt="Epernay Champagne" class="col-11 col-sm-8">
+        <div>
+            https://www.touropia.com/gfx/d/tourist-attractions-in-france/epernay_champagne.jpg?v=1
+        </div>
+        <div>
+            Price: 270$
+        </div>
+        <input type="checkbox" id="f-3">
+        <label for="f-3">Add to tour</label>
+    </div>
+    <div id="fourth-page" class="d-block row page">
+        <h1>Iceland</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Iceland.svg/354px-Flag_of_Iceland.svg.png" class="flag" alt="Iceland flag">
+        <h3>The Blue Lagoon</h3>
+        <img src="https://cdn.thecrazytourist.com/wp-content/uploads/2016/03/The-Blue-Lagoon-Iceland.jpg" alt="The Blue Lagoon" class="col-11 col-sm-8">
+        <div>
+            Bubbling and steaming between the rocky promontories of the Reykjanes Peninsula some 40 kilometers from the island’s capital at Reykjavik, the Blue Lagoon hails in as one of Iceland’s most visited tourist attractions. Despite its volcanic nature, the site is actually very young; formed from the leftover plugholes of a geothermal power plant in the 1970s. Still, the location amidst the ridges around Grindavik is truly enchanting, while the waters come packed with minerals – the reason for the shimmering, whitish hue of the lagoon and the driving force behind the spot’s famed healing powers. Visitors to the lagoon can also enjoy in-water massages, guided tours of the curious geothermal area and luxury lounge facilities besides.
+        </div>
+        <div>
+            Price: 400$
+        </div>
+        <input type="checkbox" id="ic-1">
+        <label for="ic-1">Add to tour</label>
+        <h3>Gullfoss Waterfall</h3>
+        <img src="https://cdn.thecrazytourist.com/wp-content/uploads/2016/03/Gullfoss-Waterfall-Iceland.jpg" alt="Gullfoss Waterfall"class="col-11 col-sm-8">
+        <div>
+            Visitors will find the majestic Gullfoss Waterfall roaring over the escarpments and bluffs of south-western Iceland. It’s famed as one of the most dramatic cataracts in the world, and cascades over a series of stepped rocks and terraces before plunging over the 32-meter high crevice that gives the fall its distinct appearance of disappearing into the Icelandic subterrane. The falls themselves can often be found arched over by rainbows or shrouded in plumes of mist, while by summer, the surrounding hills and ridges come dressed in a verdant covering of grass that makes a fine backdrop for hiking around the banks of the Hvita River.
+        </div>
+        <div>
+            Price: 140$
+        </div>
+        <input type="checkbox" id="ic-2">
+        <label for="ic-2">Add to tour</label>
+        <h3>Grundarfjordur</h3>
+        <img src="https://cdn.thecrazytourist.com/wp-content/uploads/2016/03/Grundarfjordur.jpg" alt="Grundarfjordur"class="col-11 col-sm-8">
+        <div>
+            The small and sleepy fishing town of Grundarfjordur makes its home on the ice-caked edge of the Snaefellsnes Peninsula, where some of West Iceland’s most curious coastal formations edge their way up to the waters of the Greenland Sea. And while hiking and cliff trekking abounds in the surrounding national park and Grundarfjordur itself is known for its earthy summer folk festivals courtesy of the local Viking Foundation, the town is unquestionably most famed as the jump off point for seeing (and photographing for most) the striking profile of Mount Kirkjufell, which lurches like a rocky shark fin amidst the waterfalls and coves of Snaefellsnes.
+            <div>
+                Price: 180$
+            </div>
+            <input type="checkbox" id="ic-3">
+            <label for="ic-3">Add to tour</label>
+        </div>
+    </div>
+    <div id="fifth-page" class="d-block row page">
+        <h1>England</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/383px-Flag_of_England.svg.png" class="flag" alt="England flag">
+        <h3>Brighton</h3>
+        <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-england/brighton.jpg?v=bae07469dd1bf03d4fb6b3ccfddf5bf7" alt="Brighton" class="col-11 col-sm-8">
+        <div>
+            Brighton, on the Sussex coast, has been a popular beach resort since the mid-19th century. Much of its popularity is due to the proximity to London, making it popular with day trippers. The beachfront is lined with graceful old Victorian homes that today provide tourist accommodations. Visitors will want to walk out on the famous Palace Pier or admire the traditional English gardens. The city has a vibrant night life, and is home to many entertainers and athletes.
+        </div>
+        <div>
+            Price: 250$
+        </div>
+        <input type="checkbox" id="en-1">
+        <label for="en-1">Add to tour</label>
+        <h3>Lake District</h3>
+        <img src="https://www.touropia.com/gfx/d/tourist-attractions-in-england/lake_district.jpg?v=ad926f1297a24fb9d2e41d07fcc91cd1" alt="Lake District" class="col-11 col-sm-8">
+        <div>
+            The Lake District in northwest England’s Cumbria is home to the country’s largest national park. The mountainous region is known for hikes and mountain climbing. It’s a popular tourist destination, attracting more than 15 million visitors annually. The park has the highest mounting in England, Scafell Peak, and the longest lake, Windermere. Others may prefer more gentle walks through the valleys while they contemplate the works of William Wordsworth, a famous 19th century poet, or riding a steam train through the scenic are.
+        </div>
+        <div>
+            Price: 155$
+        </div>
+        <input type="checkbox" id="en-2">
+        <label for="en-2">Add to tour</label>
+        <h3>Bath</h3>
+        <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-england/bath.jpg?v=c63bc2df8877f039c8bd3d9001887052" alt="Bath" class="col-11 col-sm-8">
+        <div>
+            Bath got its name because that’s what it was when it was founded by the Romans in 60 AD, who built baths here because of the hot springs. It reached its popularity peak in the Georgian years when the wealthy flocked here for spas. Besides being famous for its waters, the city also is an excellent example of Georgian architecture. Bath has an active cultural scene today, with live theatre and fine dining. This southwestern English city makes a good base from which to visit the monolithic Stonehenge.
+        </div>
+        <div>
+            Price: 170$
+        </div>
+        <input type="checkbox" id="en-3">
+        <label for="en-3">Add to tour</label>
+    </div>
+</article>
+<button type="button" class="btn btn-primary m-5" id="calculate">Сalculate the cost of the tour</button>
+<script>
+    document.getElementById('calculate').onclick = function (){
+        let sum = 0;
+        if(document.getElementById('it-1').checked){
+            sum+=200;
+        }
+        if(document.getElementById('it-2').checked){
+            sum+=250;
+        }
+        if(document.getElementById('it-3').checked){
+            sum+=100;
+        }
+        if(document.getElementById('m-1').checked){
+            sum+=100;
+        }
+        if(document.getElementById('m-2').checked){
+            sum+=230;
+        }
+        if(document.getElementById('m-3').checked){
+            sum+=200;
+        }
+        if(document.getElementById('f-1').checked){
+            sum+=1000;
+        }
+        if(document.getElementById('f-2').checked){
+            sum+=130;
+        }
+        if(document.getElementById('f-3').checked){
+            sum+=270;
+        }
+        if(document.getElementById('ic-1').checked){
+            sum+=400;
+        }
+        if(document.getElementById('ic-2').checked){
+            sum+=140;
+        }
+        if(document.getElementById('ic-3').checked){
+            sum+=180;
+        }
+        if(document.getElementById('en-1').checked){
+            sum+=250;
+        }
+        if(document.getElementById('en-2').checked){
+            sum+=155;
+        }
+        if(document.getElementById('en-3').checked){
+            sum+=170;
+        }
+        alert(sum);
+    }
+</script>
+</body>
+</html>
