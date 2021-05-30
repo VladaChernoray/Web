@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Seminar 9</title>
+	<meta name="viewport" content="width=width-device, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<form>
+		<h3 class="text-center">Замовлення на придбання товару</h3>
+		<div class="form-inline">
+	    	<label for="selectBook">Назва товару</label>
+	    	<select class="form-control" id="selectBook">
+		      <option>Отсюда и в вечность - 16</option>
+		      <option>Над пропастью во ржи - 20</option>
+		      <option>Грозовой перевал - 30</option>
+		      <option>Ярмарка тщеславия - 5</option>
+		      <option>Зелёная миля - 15</option>
+	    	</select>
+	  	</div>
+	  	<div class="form-inline">
+    		<div class="form-group col-5">
+      			<label for="inputAmount">Кількість</label>
+      			<input class="form-control" id="inputAmount" value="0">
+    		</div>
+    		<div class="form-group col-5">
+      			<label for="inputCost">Вартість</label>
+      			<input class="form-control" id="inputCost" value="0">
+    		</div>
+  		</div>
+	  	<div class="form-group">
+	  		<h5>Спосіб доставки замовлення</h5>
+	  		<div class="form-check">
+				<input class="form-check-input" type="radio" name="exampleRadios1" id="post-radio" value="option1" checked>
+			    <label class="form-check-label" for="post-radio">
+				    Поштою
+			    </label>
+		    </div>
+			<div class="form-check">
+			    <input class="form-check-input" type="radio" name="exampleRadios2" id="home-radio" value="option2">
+			    <label class="form-check-label" for="home-radio">
+			    	Доставка до дому
+			    </label>
+			</div>
+			<div class="form-check">
+  				<input class="form-check-input" type="checkbox" value="" id="holiday-checkbox">
+  				<label class="form-check-label" for="holiday-checkbox">
+    				У святковій упаковці
+  				</label>
+			</div>
+	  	</div>
+	  	<div class="form-group">
+	  		<div class="row">
+		  		<label for="total" class="ml-auto col col-2 col-form-label">Загальна вартість замовлення</label>
+	      		<input type="number" class="col col-2 form-control" id="total">
+	      		<input type="button" class="btn col col-2 ml-2 bg-dark text-light" id="calculateTotal" value="Підрахувати"/>
+      		</div>
+  		</div>
+  		<div>Дані замовника</div>
+  		<div class="form-inline">
+    		<div class="form-group col-6">
+      			<label for="inputName">Ім'я</label>
+      			<input type="text" class="form-control" id="inputName" required="required">
+    		</div>
+    		<div class="form-inline col-6">
+      			<label for="inputAddress">Адреса</label>
+      			<input type="text" class="form-control" id="inputAddress" required="required">
+    		</div>
+  		</div>
+  		<div class="form-inline row justify-content-center">
+	  		<input type="button" class="btn btn-pr col col-5 bg-dark text-light m-1" id="reset" value="Відновити початкові значення полів"/>
+	  		<input type="button" class="col col-5 btn bg-dark text-light m-1" id="send" value="Відіслати дані"/>
+  		</div>
+	</form>
+	<div id="table-books">
+		
+	</div>
+	<script>
+		let names = ["Гаррі Поттер", "Персі Джексон", "Качині істроії", "Життя Людовіка 14", "Книга 2 том 3"];
+
+		let amounts = [0,0,0,0,0];
+
+		let costs = [20.5, 15, 32, 5, 19];
+
+		function UpdateCost(){
+			let cur = Number.parseInt(document.getElementById("inputAmount").value) * costs[document.getElementById("selectBook").selectedIndex];
+			console.log(cur);
+			if(document.getElementById("post-radio").checked) {
+				cur*=1.05;
+			}
+			else if(document.getElementById("home-radio").checked) {
+				cur*=1.15;
+			}
+			if(document.getElementById("holiday-checkbox").checked) {
+				cur*=1.1;
+			}
+			document.getElementById("inputCost").value = cur;
+		}
+
+		function CalculateTotal(){
+			let total = 0;
+			for(let i = 0; i< 5; i++){
+				total += costs[i] * amounts[i];
+			}
+			if(document.getElementById("post-radio").checked) {
+				total*=1.05;
+			}
+			else if(document.getElementById("home-radio").checked) {
+				total*=1.15;
+			}
+			if(document.getElementById("holiday-checkbox").checked) {
+				total*=1.1;
+			}
+			document.getElementById("total").value = total;
+		}
+
+		document.getElementById("inputAmount").onchange = function(){
+			amounts[document.getElementById("selectBook").selectedIndex] = Number.parseInt(document.getElementById("inputAmount").value);
+			UpdateCost();
+		}
+
+		document.getElementById("calculateTotal").onclick = function(){
+			CalculateTotal();
+		}
+
+		document.getElementById("reset").onclick = function(){
+			amounts = [0,0,0,0,0];
+			document.getElementById("post-radio").checked = true;
+			document.getElementById("holiday-checkbox").checked = false;
+			document.getElementById("inputCost").value = "0";
+			document.getElementById("selectBook").selectedIndex = 0;
+			document.getElementById("inputAmount").value = "0";
+			document.getElementById("inputName").value = "";
+			document.getElementById("inputAddress").value = "";
+			let elements = document.getElementsByClassName("books");
+			while (elements[0]) {
+		    	elements[0].parentNode.removeChild(elements[0]);
+			}
+		}
+
+		function AddBookToTable(id){
+			let list = document.getElementById("table-books");
+			let holder_div = document.createElement("div");
+			let name_div = document.createElement("div");
+			name_div.innerHTML = names[id];
+			holder_div.appendChild(name_div);
+
+			let amount_div = document.createElement("div");
+			amount_div.innerHTML = amounts[id];
+			holder_div.appendChild(amount_div);
+
+			let cost_div = document.createElement("div");
+			let cur = amounts[id] * costs[id];
+			if(document.getElementById("post-radio").checked) {
+				cur*=1.05;
+			}
+			else if(document.getElementById("home-radio").checked) {
+				cur*=1.15;
+			}
+			if(document.getElementById("holiday-checkbox").checked) {
+				cur*=1.1;
+			}
+			cost_div.innerHTML = Math.round(cur);
+			holder_div.appendChild(cost_div);
+
+		    list.appendChild(holder_div);
+		}
+
+		document.getElementById("send").onclick = function(){
+			if(document.getElementById("inputName").value == "" || document.getElementById("inputAddress").value == ""){
+				alert("Не всі поля заповнені");
+			}
+			else{
+				for(let i = 0; i<5; i++){
+					if( amounts[i] == 0) continue;
+					AddBookToTable(i);
+				}
+			}
+		}
+	</script>
+</body>
+</html>

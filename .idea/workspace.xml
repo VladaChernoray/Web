@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="01d00617-df50-4c4e-bb6a-76fba4247efc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Lec_16/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modul_2/calculator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modul_2/histograma.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,9 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -39,21 +60,21 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\VLADA\Desktop\Web\Lec_17" />
       <recent name="C:\Users\VLADA\Desktop\Web\Lab_3" />
       <recent name="C:\Users\VLADA\Desktop\Web\Lab_1" />
       <recent name="C:\Users\VLADA\Desktop\Web\Lec_11" />
       <recent name="C:\Users\VLADA\Desktop\Web\Lab_1\Level_1\head" />
-      <recent name="C:\Users\VLADA\Desktop\Web\Lec_3" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.task_1.js">
+  <component name="RunManager" selected="Node.js.index.js (1)">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Lec_16/index.js" working-dir="$PROJECT_DIR$/Lec_16">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Lec_17/index.js" working-dir="$PROJECT_DIR$/Lec_10">
+      <method v="2" />
+    </configuration>
     <configuration name="task_1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Lec_14/task_1.js" working-dir="$PROJECT_DIR$/Lec_14">
-      <method v="2" />
-    </configuration>
-    <configuration name="task_3.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Lec_14/task_3.js" working-dir="$PROJECT_DIR$/Lec_14">
-      <method v="2" />
-    </configuration>
-    <configuration name="task_4.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Lec_14/task_4.js" working-dir="$PROJECT_DIR$/Lec_14">
       <method v="2" />
     </configuration>
     <configuration name="task_5.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Lec_14/task_5.js" working-dir="$PROJECT_DIR$/Lec_14">
@@ -64,11 +85,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.index.js (1)" />
+        <item itemvalue="Node.js.index.js" />
         <item itemvalue="Node.js.task_1.js" />
         <item itemvalue="Node.js.task_6.js" />
         <item itemvalue="Node.js.task_5.js" />
-        <item itemvalue="Node.js.task_4.js" />
-        <item itemvalue="Node.js.task_3.js (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -106,34 +127,46 @@
       <workItem from="1621292981925" duration="674000" />
       <workItem from="1621411685990" duration="14721000" />
       <workItem from="1621778922203" duration="1053000" />
-      <workItem from="1621882537171" duration="14777000" />
+      <workItem from="1621882537171" duration="15681000" />
+      <workItem from="1622335381212" duration="2491000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="423" y="96" key="FileChooserDialogImpl" timestamp="1615472046928">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="423" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1615472046928" />
-    <state width="1259" height="215" key="GridCell.Tab.0.bottom" timestamp="1620500791544">
+    <state width="1259" height="2" key="GridCell.Tab.0.bottom" timestamp="1622336990383">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="215" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1620500791544" />
-    <state width="1259" height="215" key="GridCell.Tab.0.center" timestamp="1620500791544">
+    <state width="1259" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1622336990383" />
+    <state width="1259" height="2" key="GridCell.Tab.0.center" timestamp="1622336990383">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="215" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1620500791544" />
-    <state width="1259" height="215" key="GridCell.Tab.0.left" timestamp="1620500791544">
+    <state width="1259" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1622336990383" />
+    <state width="1259" height="2" key="GridCell.Tab.0.left" timestamp="1622336990383">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="215" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1620500791544" />
-    <state width="1259" height="215" key="GridCell.Tab.0.right" timestamp="1620500791544">
+    <state width="1259" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1622336990383" />
+    <state width="1259" height="2" key="GridCell.Tab.0.right" timestamp="1622336990383">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="215" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1620500791544" />
+    <state width="1259" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1622336990383" />
     <state width="1259" height="215" key="GridCell.Tab.1.bottom" timestamp="1620500791564">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -182,21 +215,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1259" height="215" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1620500791564" />
-    <state x="93" y="93" width="1095" height="495" key="dock-window-1" timestamp="1613244529693">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="93" y="93" width="1095" height="495" key="dock-window-1/0.0.1280.680@0.0.1280.680" timestamp="1613244529693" />
-    <state x="93" y="93" width="1095" height="495" key="dock-window-2" timestamp="1613244529693">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="93" y="93" width="1095" height="495" key="dock-window-2/0.0.1280.680@0.0.1280.680" timestamp="1613244529693" />
     <state x="297" y="151" key="run.anything.popup" timestamp="1621473569835">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1621473569835" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1612997786262">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1612997786262" />
   </component>
 </project>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Histograma</title>
+	<script>
+		function change() 
+		{
+			var content = document.querySelector('.content');
+			var n = form1.amount.value;
+			if (isNaN(n - 1)|| n < 0)
+			{
+				alert("Error...");
+				return;
+			}
+			var input = "№ | Название | Значение ";
+			for (var i = 0; i < n; i++) 
+			{
+				input += "<div class = 'block clearfix'>" + i + " : <input type = 'text' value='' class = 'diagram_name'> <input type = 'text' value='' class = 'diagram_h'></div>";
+			}
+			content.innerHTML = input;
+		}
+		function create() 
+		{
+			var content = document.querySelector('.content');
+			var dia = document.querySelector('.diagram');
+			var n = form1.amount.value;
+			var max_h = 0;
+			var input = "";	
+			for (var i = 0; i < n; i++) 
+			{
+				var temp_h = content.children[i].children[1].value;
+				var temp_name = content.children[i].children[0].value;
+				if (isNaN(temp_h - 1)|| temp_h < 0 || temp_h > Math.floor(temp_h))
+				{
+					alert("Error...");
+					return;
+				}
+				if (parseInt(temp_h) > parseInt(max_h)) 
+				{
+					max_h = temp_h;
+				}	
+				input += "<li class='column'>" + temp_name + "</li>";
+			}
+			dia.innerHTML = input;
+			for (var i = 0; i < n; i++) 
+			{	
+				var temp_h = content.children[i].children[1].value;
+				
+				dia.children[i].style.height = (temp_h * 400) / max_h+ "px";
+			}
+				
+		}
+		
+	
+	</script>
+
+	<style>
+		.column 
+		{
+			height: 400px;
+			display: inline-block;
+			background-color: #25383c;
+			margin: 1px;
+			border: 1px solid black;
+			color: white;
+		}
+
+		.block 
+		{
+			border: 1px solid black;
+			background: #40a070;
+			padding: 40px;
+		}
+
+		.clearfix 
+		{
+			border: 0px;
+		}
+		.button
+		{
+			width:165px;
+			height:35px;
+			font-size:15px;
+			background: #2b1b17;
+			color: white;
+		}
+		.text
+		{
+			width:160px;
+			height:30px;
+			font-size:20px;
+			background: white;
+			border:none;
+		}
+</style>
+</head>
+
+<body>
+	<form name = "form1">
+		<div class = "block">
+			<div class = "block_clearfix">
+				<h2>Количество столбиков: </h2><input class="text" type = "text" value="" id = "amount" oninput = "change()">
+			</div><br>
+			<div class = "block_clearfix">
+				<input class="button" type = "button" value = "Создать диаграмму" onclick = "create()">
+			</div>
+			<br>
+			<div class = "content">
+			</div>
+		</div>
+	</form>
+	<div class="block">
+		<h2>Созданая диаграмма: </h2><br>
+        <ul class="diagram">
+        </ul>
+      </div>
+</body> 
